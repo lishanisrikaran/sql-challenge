@@ -2,27 +2,27 @@
 
 departments
 - 
-dept_no VARCHAR(5) PK
+dept_no CHAR(4) PK
 dept_name VARCHAR(255)
 
 dept_emp 
 - 
 emp_no INTEGER FK >- employees.emp_no PK
-dept_no VARCHAR(5) FK >- departments.dept_no PK 
+dept_no CHAR(4) FK >- departments.dept_no PK 
 
 dept_manager
 - 
-dept_no VARCHAR(5) FK >- departments.dept_no 
+dept_no CHAR(4) FK >- departments.dept_no 
 emp_no INTEGER FK - employees.emp_no PK
 
 employees
 - 
 emp_no INTEGER PK 
-emp_title_id VARCHAR(5) FK >- titles.title_id 
+emp_title_id CHAR(5) FK >- titles.title_id 
 birth_date DATE 
 first_name VARCHAR(255)
 last_name VARCHAR(255)
-sex CHAR
+sex CHAR(1)
 hire_date DATE
 
 salaries
@@ -32,5 +32,5 @@ salary INTEGER
 
 titles 
 - 
-title_id VARCHAR(5) PK 
+title_id CHAR(5) PK 
 title VARCHAR(255) 
