@@ -41,9 +41,10 @@ CREATE TABLE employees (
 	PRIMARY KEY (emp_no)
 	);
 
--- Selects employees table.
+-- Selects first 100 records from the employees table.
 
-SELECT * FROM employees;
+SELECT * FROM employees
+LIMIT 100;
 
 -----------------------------------------------------------------------------------------------
 
@@ -57,9 +58,10 @@ CREATE TABLE dept_emp (
 	PRIMARY KEY (emp_no, dept_no)
 	);
 	
--- Selects dept_emp table.
+-- Selects first 100 records from the dept_emp table.
 
-SELECT * FROM dept_emp;
+SELECT * FROM dept_emp
+LIMIT 100;
 
 -----------------------------------------------------------------------------------------------
 
@@ -90,4 +92,5 @@ CREATE TABLE salaries (
 	
 -- Selects salaries table.
 
-SELECT * FROM salaries;
+SELECT * FROM salaries
+LIMIT 100;
