@@ -37,7 +37,7 @@ SELECT
 FROM 
 	dept_manager dm 
 	INNER JOIN employees e ON dm.emp_no = e.emp_no
-	RIGHT JOIN departments d ON dm.dept_no = d.dept_no -- A Inner join would suffice for this data set, however, a right join helps identify any departments without a manager. 
+	RIGHT JOIN departments d ON dm.dept_no = d.dept_no -- A Inner join would suffice for this database, however, a right join helps identify any departments without a manager. 
 	INNER JOIN titles t ON e.emp_title_id = t.title_id
 ORDER BY d.dept_no;
 
@@ -54,7 +54,7 @@ SELECT
 	d.dept_name AS "Department Name"
 FROM 
 	dept_emp de 
-	RIGHT JOIN employees e ON de.emp_no = e.emp_no -- A Inner join would suffice for this data set, however, a right join helps identify any employees not allocated to a department. 
+	RIGHT JOIN employees e ON de.emp_no = e.emp_no -- A Inner join would suffice for this database, however, a right join helps identify any employees not allocated to a department. 
 	INNER JOIN departments d ON de.dept_no = d.dept_no
 ORDER BY e.emp_no;
 

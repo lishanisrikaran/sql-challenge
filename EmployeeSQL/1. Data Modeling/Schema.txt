@@ -1,4 +1,4 @@
-# ERD of employees data from 1980;s and 1990's.
+# ERD of employees data from 1980's and 1990's.
 
 departments
 - 
